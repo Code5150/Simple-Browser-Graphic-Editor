@@ -1,0 +1,55 @@
+/*ФОРМА*/
+.values{
+    width: 230px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around; 
+}
+
+form{
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-right: 85%;
+    float: left;
+    position: absolute;
+}
+
+/*ЭЛЕМЕНТЫ ФОРМЫ*/
+.values .field-with-label{
+    flex-basis: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.values select{
+    flex-basis: 100%;
+    break-after: always;
+}
+/*ВНУТРИ ЭЛЕМЕНТА*/
+.field-with-label label{
+    width: 50px;
+}
+
+.field-with-label canvas{
+    border: 2px dotted black;
+}
+
+.field-with-label input{
+    width: 100px;
+    height: 24px;
+}
+
+.field-with-label input[type="color"]{
+    width: 120px;
+    height: 24px;
+}
+/*КНОПКИ ФОРМЫ*/
+.values input[type="button"]{
+    flex-basis: 100%;
+    height: 24px;
+    padding: auto;
+    break-after: always;
+}
