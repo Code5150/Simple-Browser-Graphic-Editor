@@ -25,6 +25,9 @@
                           clickOnMainCanvas(document.getElementById('figure').value)">
                     <!--option value="fractal">Фрактал</option-->
                     <option value="bezier">Кривая Безье</option>
+                    <option value="img-gray-filter">Оттенки серого</option>
+                    <option value="img-contrast-filter">Контрастное масштабирование</option>
+                    <option value="img-matrix-filter">Матрица преобразований</option>
                     <!--option value="test">Тестовый режим</option-->
                     <option value="brez-line">Линия Брезенхама</option>
                     <option value="brez-circle">Окружность Брезенхама</option>
@@ -49,6 +52,14 @@
                 <div class="field-with-label" id="length-input">
                     <label id="forlength" for="length">Длина: </label>
                     <input id="length" type="number" required>
+                </div>
+                <div class="field-with-label" id="range1-input">
+                    <label for="range1">Левая граница: </label>
+                    <input id="range1" type="range" min='0' max='255' required>
+                </div>
+                <div class="field-with-label" id="range2-input">
+                    <label for="range2">Правая граница: </label>
+                    <input id="range2" type="range" min='0' max="255" required>
                 </div>
                 
                 <div class="field-with-label" id="pattern-input">
